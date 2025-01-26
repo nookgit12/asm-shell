@@ -64,3 +64,6 @@ toskibidiornaur:
 
 skibidied:
 	@echo "Well well well, you skibidied."
+
+funny:
+	@echo "the fun commands are "make toskibidiornot" and "make skibidied""
