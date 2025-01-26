@@ -48,7 +48,6 @@ check:
 
 copyright:
 	@echo "copyright Oliver Hiivola 2025"
-	@echo "some of this code made by chatgpt i wrote the makefile and chatgpt wrote the shell lol"
 	@echo "stealing: its fine i dont really care just dont claim it as your own"
     
 # Run the shell program
