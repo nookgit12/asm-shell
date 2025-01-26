@@ -12,12 +12,13 @@ all:
 	@echo "brotha you need to run make build to build the shell"
 	@echo "for copyright info run 'make copyright'"
 
-# Assemble the .asm file into an object file and link
-build: $(OBJ) $(TARGET)
-	@echo "building please wait"
+# Assemble the .asm file into an object file
+$(OBJ): $(SRC)
 	$(ASM) $(ASMFLAGS) -o $(OBJ) $(SRC)
+
+# Link the object file into an executable
+build: $(OBJ)
 	$(LD) $(LDFLAGS) -o $(TARGET) $(OBJ)
-	@echo "build done"
 
 # Clean up generated files
 clean:
@@ -60,4 +61,3 @@ skibidied:
 
 funny:
 	@echo "The fun commands are 'make toskibidiornot' and 'make skibidied'."
-	@echo "You can also run 'make toskibidiornaur' for a funny message."
