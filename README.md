@@ -1,4 +1,4 @@
-#potatoSH
+# potatoSH
 
 This project is a simple shell program written in assembly language using NASM.
 
